@@ -1,4 +1,4 @@
-# Documentation of the Mitnick Attack Reproduction Script in LAN
+# Documentation of the Mitnick Attack Reproduction in LAN
 
 ## Overview
 
