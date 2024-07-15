@@ -17,13 +17,13 @@ The script is divided into several functions, each performing a specific task ne
 
 ### First of all...
 
-After [**Building and starting the containers**], it is extremely important and necessary that the **/root.rhosts** file contains the following content **before** running the script:
+After [**Building and starting the containers**], it is extremely important and necessary that the **/root/.rhosts** file contains the following content **before** running the script:
 
 ```
 10.9.0.6 +
 ```
 
-If it does not contain it, follow the step of [**Accessing the victim container (X_terminal)**], and manually add the string `10.9.0.6` to the file.
+If it does not contain it, follow the step of [**Accessing the victim container (X_terminal)**], and manually add the string `10.9.0.6 +` to the file.
 
 1. **Environment Setup:**
    - Use the configured Docker environment (**`./image_ubuntu_mitnick/Dockerfile`** and **`./docker-compose.yml`**).
