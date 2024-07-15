@@ -18,7 +18,7 @@ def get_mac(ip_address="10.9.0.1"):
                     mac_match = search(r'ether ([\da-fA-F:]{17})', interface)
                     if mac_match:
                         return mac_match.group(1)
-            raise RuntimeError(f"MAC address not found for the given IP{ip_address} address.")
+            raise RuntimeError(f"MAC address not found for the IP 10.9.0.1 address.")
         except subprocess.CalledProcessError as e:
             raise RuntimeError(f"Failed to run ifconfig: {e}")
     else:
